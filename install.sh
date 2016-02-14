@@ -9,7 +9,7 @@ install() {
 
 command -v mongo >/dev/null 2>&1 || install
 
-CONFIG="/configs/mongod.yaml"
+CONFIG="./configs/mongod.yaml"
 CONFIG_TARGET="/etc/mongod.conf"
 
 sudo cp -f ${CONFIG} ${CONFIG_TARGET}
